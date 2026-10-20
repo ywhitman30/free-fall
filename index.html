@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fall Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Free Fall Calculator</h1>
+    <div class="rounding-control">
+        <label for="roundingPrecision">Round results to:</label>
+        <select id="roundingPrecision">
+            <option value="3" selected>Thousandth (0.001)</option>
+            <option value="2">Hundredth (0.01)</option>
+        </select>
+    </div>
+</label>
+    </div>
+    <form id="freeFallForm">
+        <div class="input initial-velocity-input">
+            <label for="input initial_velocity">Initial velocity (m/s):</label>
+            <input type="text" id="initial_velocity" name="initial_velocity" inputmode="decimal" pattern="[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)|x" oninput="this.value = this.value.replace(/[^0-9x.+-]/g, '')" required>
+        </div>
+        <div class="input final-velocity-input">
+            <label for="final_velocity">Final velocity (m/s):</label>
+            <input type="text" id="final_velocity" name="final_velocity" inputmode="decimal" pattern="[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)|x" oninput="this.value = this.value.replace(/[^0-9x.+-]/g, '')" required>
+        </div>
+        <div class="input acceleration-input">
+            <label for="acceleration">Acceleration (m/s²):</label>
+            <input type="text" id="acceleration" name="acceleration" inputmode="decimal" pattern="[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)|x" oninput="this.value = this.value.replace(/[^0-9x.+-]/g, '')" required>
+        </div>
+        <div class="input time-input">
+            <label for="time">Time (s):</label>
+            <input type="text" id="time" name="time" inputmode="decimal" pattern="[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)|x" oninput="this.value = this.value.replace(/[^0-9x.+-]/g, '')" required>
+        </div>
+        <div class="input distance-input">
+            <label for="distance">Distance (m):</label>
+            <input type="text" id="distance" name="distance" inputmode="decimal" pattern="[+-]?([0-9]+\.?[0-9]*|\.[0-9]+)|x" oninput="this.value = this.value.replace(/[^0-9x.+-]/g, '')" required>
+        </div>
+        <button type="submit">Calculate</button>
+    </form>
+    <button type="button" onclick="clearCalculator()">Clear</button>
+    <div id="result"></div>
+    <output id="output"></output>
+
+    <script src="why_not.js"></script>
+
+</body>
+</html>

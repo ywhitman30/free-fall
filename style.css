@@ -1,0 +1,44 @@
+body {
+    background-color: #000000;
+}
+h1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #7DF9FF;
+    text-shadow: 0px 0px 4px #7DF9FF;
+    text-align: center;
+    margin-bottom: 0px;
+}
+label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #7DF9FF;
+    text-shadow: 0px 0px 4px #7DF9FF;
+    margin-bottom: 10px;
+    text-align: right;
+    margin-top: 10px;
+}
+.input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 3px 5px;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #7DF9FF;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.rounding-control {
+    text-align: center;
+    margin-bottom: 30px;
+}
